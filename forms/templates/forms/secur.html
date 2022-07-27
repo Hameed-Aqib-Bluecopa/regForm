@@ -1,0 +1,11 @@
+<html>
+    <body>
+        <p>This is Security Side</p>
+        <div>
+            {% csrf_token %}
+            {{ remote_ip }}
+        </div>
+        <button type="submit" class="btn btn-primary">Submit</button>
+    </body>
+
+</html>
